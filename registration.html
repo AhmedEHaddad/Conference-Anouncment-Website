@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="script/script clean.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="top">
+			<h1 style="text-align: center;">Welcome to CIU annual conference on technology<hr/></h1>
+			<div class="navbar" style="text-align: center;">
+				<a class="bar-item" href="Homepage.html" style="margin-right: 5em;">Home</a>
+				<a class="bar-item" href="CIU.html" style="margin-right: 5em">CIU</a> 
+				<a class="bar-item active" href="registration.html" style="margin-right: 5em">Register</a>
+				<a class="bar-item" href="contact us.html">Contact us</a> <hr/>
+			</div>
+
+		</div>
+		<div class="left">
+
+		</div>
+		<div class="main">
+            <form>
+            <table>
+                <caption>select the session you want to register</caption>
+                <tr>
+                    <th>Sessions</th>
+                    <th>Participant Type</th>
+                    <th>No. Of Days</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="sessions" value="intProg" />Internet Programming</td>
+                    <td>
+                        <input type="radio" name="ptype0" value="100" />Author <br/>
+                        <input type="radio" name="ptype0" value="200" />Audiance 
+                    </td>
+                    <td>
+                            <select name="noDays" required="required" onchange="calc()">
+                                <option selected disabled> No. Of Days</option>
+                                <option value=1 >1</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                            </select>
+                    </td>
+                </tr>
+                <tr>
+                        <td><input type="checkbox" name="sessions" value="wire" />Wireless Networks</td>
+                        <td>
+                            <input type="radio" name="ptype1" value="author" />Author <br/>
+                            <input type="radio" name="ptype1" value="audiance" />Audiance 
+                        </td>
+                        <td>
+                                <select name="noDays" onchange="calc()">
+                                    <option selected disabled> No. Of Days</option>
+                                    <option value="1" >1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                        </td>
+                </tr>
+                <tr>
+                        <td><input type="checkbox" name="sessions" value="data" />Data Security</td>
+                        <td>
+                            <input type="radio" name="ptype2" value="author" />Author <br/>
+                            <input type="radio" name="ptype2" value="audiance" />Audiance 
+                        </td>
+                        <td>
+                                <select name="noDays" onchange="calc()">
+                                    <option selected disabled> No. Of Days</option>
+                                    <option value="1" >1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                        </td>
+                </tr>
+                <tr>
+                        <td><input type="checkbox" name="sessions" value="ai" />Artificial Intelligence</td>
+                        <td>
+                            <input type="radio" name="ptype3" value="author" />Author <br/>
+                            <input type="radio" name="ptype3" value="audiance" />Audiance 
+                        </td>
+                        <td>
+                                <select name="noDays" onchange="calc()">
+                                    <option selected disabled> No. Of Days</option>
+                                    <option value="1" >1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                        </td>
+                </tr>
+            </table>
+            </form>
+            <input type="submit" value="Calculate" id="calc" onclick="calc()"/>
+            <p id="result"></p>
+            
+
+
+		</div>
+		<div class="footer">
+			<p>@21808164</p>
+		</div>
+	</div>
+</body>
+</html>
